@@ -14,7 +14,10 @@ def pokedata(info):
     return (pokemoninfo)
 
 def main():
+
     connection = psycopg2.connect(
+        host="db",
+        port="5432",
         database="database",
         user="user",
         password="password"
